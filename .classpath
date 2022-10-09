@@ -2,7 +2,6 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry excluding="eclipse-workspace/tp/src/|eclipse-workspace/test2/src/|Desktop/eclipse-workspace/src/|eclipse-workspace/yabg/src/" kind="src" path=""/>
-	<classpathentry kind="src" path="Desktop/eclipse-workspace/src"/>
 	<classpathentry kind="src" path="eclipse-workspace/test2/src"/>
 	<classpathentry kind="src" path="eclipse-workspace/tp/src"/>
 	<classpathentry kind="src" path="eclipse-workspace/yabg/src"/>
