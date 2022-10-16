@@ -18,7 +18,7 @@ public class condition {
 			 nums[i]=temp;
 		 
 		 }
-		 System.out.println(Arrays.toString(nums));
+		 System.out.println(nums[2]);
 		
 	}
 
