@@ -1,8 +1,8 @@
-package devoir1;
+package atelier04;
 
 import java.util.Arrays;
 
-public class condition {
+public class condition4 {
 	public static void main(String[]args) {
 		int [] nums = {10,9,-1,4,8};
 		 for (int i = 0; i< nums.length-1; i++) {
