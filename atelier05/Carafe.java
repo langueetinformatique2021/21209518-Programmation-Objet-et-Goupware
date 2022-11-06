@@ -1,6 +1,8 @@
 package atelier05;
 
-/** gestion du problème des carafes */
+/** gestion du problème des carafes
+ * @author Yangduo
+ */
 public class Carafe {
 	private int contenu_, capacite_;
 
