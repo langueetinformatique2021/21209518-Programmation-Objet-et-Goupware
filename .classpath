@@ -5,6 +5,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry excluding="Desktop/eclipse-workspace/src/" kind="src" path=""/>
+	<classpathentry excluding="Desktop/eclipse-workspace/src/|Yangduo-workspace/" kind="src" output="Yangduo-workspace" path=""/>
 	<classpathentry kind="output" path="eclipse-workspace/test2/bin"/>
 </classpath>
