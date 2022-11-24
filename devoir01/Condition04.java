@@ -1,5 +1,9 @@
 package devoir01;
-
+/**
+ * chercher la médiane parmi les cinq chiffires
+ * @author yangduo
+ *
+ */
 public class Condition04 {
 	public static void main(String[]args) {
 		int [] nums = {10,9,-1,4,8};

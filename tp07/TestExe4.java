@@ -11,6 +11,7 @@ public class TestExe4 {
 		Keyboard.getInt("attente");
 		c.creation();
 		c.afficher();
+		c.duree();
 
 	}
 
