@@ -5,6 +5,7 @@ public class Test {
 		
 		LancerDes ld = new LancerDes("test",1);
 		TroisDes tire = ld.lancerDes();
+		ld.getNom();
 		tire.afficher();
 
 	}

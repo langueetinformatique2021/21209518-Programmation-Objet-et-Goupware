@@ -43,6 +43,10 @@ public class LancerDes extends Aleat {
 		if (list.get(0) == 4) if (list.get(1) == 2)if (list.get(2)== 1) throw new E421(tire, nom);
 		if (list.contains(4)) if (list.contains(2)) if (list.contains(1)) throw new E421(nom, tire);
 	}
+	
+	public void getNom() {
+		System.out.println("Le nom de lanceur est : "+this.lanceur);
+	}
 
 }
 
