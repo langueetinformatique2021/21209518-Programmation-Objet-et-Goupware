@@ -16,6 +16,6 @@ public class MonPremierFichierTexte {
 	}
 
 	public static void main(String[] args) throws IOException {
-		fileWriterMethod("/Users/yangduo/git/21209518-Programmation-Objet-et-Goupware/tp09/Nom.txt", "test");
+		fileWriterMethod("/Users/yangduo/git/21209518-Programmation-Objet-et-Goupware/tp09/Nom.txt", "test\nTEST");
 	}
 }
