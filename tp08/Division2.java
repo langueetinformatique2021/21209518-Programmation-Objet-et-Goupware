@@ -1,14 +1,13 @@
 package tp08;
 
+/**
+ * Capturer l'exception par le modifieur "throws"
+ * @author yangduo
+ *
+ */
 public class Division2 {
 	public static void main(String[] args) {
-		try {
-			division();
-		} catch (ArithmeticException e) {
-			System.out.println("Division par 0 !");
-			System.out.println(e);
-		}
-
+		division();
 	}
 
 	public static void division() throws ArithmeticException {
@@ -19,7 +18,7 @@ public class Division2 {
 				j = 1 / i;
 			} while (true);
 		} catch (ArithmeticException e) {
-			System.out.println(e.getMessage());
+			System.out.println("c'est une faute!"+e.getMessage());
 		}
 	}
 }
