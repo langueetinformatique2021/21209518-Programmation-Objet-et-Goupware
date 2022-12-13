@@ -17,7 +17,7 @@ public class MonPremierFichierTexte2 {
 	}
 
 	public static void main(String[] args) throws IOException {
-		fileWriterMethod("/Users/yangduo/git/21209518-Programmation-Objet-et-Goupware/tp09/Nom.txt", "test\nTEST");
+		fileWriterMethod("/Users/yangduo/git/21209518-Programmation-Objet-et-Goupware/tp09/Nom.txt", "Yangduo\nZOU\nYangduo ZOU");
 		System.out.println(Verifier());
 	}
 
@@ -25,9 +25,11 @@ public class MonPremierFichierTexte2 {
 		try {
 			BufferedReader br = new BufferedReader(
 					new FileReader(new File("/Users/yangduo/git/21209518-Programmation-Objet-et-Goupware/tp09/Nom.txt")));
-			if (br.readLine().equals("test") == false)
+			if (br.readLine().equals("Yangduo") == false)
 				return false;
-			if (br.readLine().equals("TEST") == false)
+			if (br.readLine().equals("ZOU") == false)
+				return false;
+			if (br.readLine().equals("Yangduo ZOU") == false)
 				return false;
 			
 		} catch (IOException e) {

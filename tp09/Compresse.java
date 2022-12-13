@@ -1,35 +1,29 @@
 package tp09;
 
-import java.io.BufferedOutputStream;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.util.zip.ZipOutputStream;
+import java.io.*;
+import java.util.zip.*;
 
-public class Compresse {
-	
-	public static void ZipCompress(String inputFile, String outputFile) throws Exception {
-        
-        ZipOutputStream out = new ZipOutputStream(new FileOutputStream(outputFile));
-        BufferedOutputStream bos = new BufferedOutputStream(out);
-        File input = new File(inputFile);
-        
-        compress(out, bos, input,null);
-        
-        bos.close();
-        out.close();
+public class Compresse{
+  public static void main(String[] args) {
+    try {
+      FileInputStream fis = new FileInputStream("/Users/yangduo/git/21209518-Programmation-Objet-et-Goupware/tp09/Nom.txt");
+      FileOutputStream fos = new FileOutputStream("/Users/yangduo/git/21209518-Programmation-Objet-et-Goupware/tp09/Nom.txt.zip");
+      ZipOutputStream zipOut = new ZipOutputStream(fos);
+      ZipEntry zipEntry = new ZipEntry("/Users/yangduo/git/21209518-Programmation-Objet-et-Goupware/tp09/Nom.txt");
+      zipOut.putNextEntry(zipEntry);
+
+      byte[] bytes = new byte[1024];
+      int length;
+
+      while ((length = fis.read(bytes)) >= 0) {
+        zipOut.write(bytes, 0, length);
+      }
+
+      zipOut.close();
+      fis.close();
+      fos.close();
+    } catch (IOException e) {
+      e.printStackTrace();
     }
-
-
-	private static void compress(ZipOutputStream out, BufferedOutputStream bos, File input, Object object) {
-		
-		
-	}
-
-	public static void main(String[] args) {
-        try {
-            ZipCompress("/Users/yangduo/git/21209518-Programmation-Objet-et-Goupware/tp09/Nom.txt", "/Users/yangduo/git/21209518-Programmation-Objet-et-Goupware/tp09/Nom.txt.zip");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+  }
 }

@@ -1,7 +1,7 @@
 package tp09;
 
 /**
- * écrit dans le fichier texte « Nom.txt » les noms des membres du groupe
+ * écrire dans le fichier texte « Nom.txt » le prénom et le nom
  * @author yangduo
  */
 import java.io.FileWriter;
@@ -16,6 +16,7 @@ public class MonPremierFichierTexte {
 	}
 
 	public static void main(String[] args) throws IOException {
-		fileWriterMethod("/Users/yangduo/git/21209518-Programmation-Objet-et-Goupware/tp09/Nom.txt", "test\nTEST");
+		fileWriterMethod("/Users/yangduo/git/21209518-Programmation-Objet-et-Goupware/tp09/Nom.txt", "Yangduo\nZOU\nYangduo ZOU");
 	}
+	
 }
