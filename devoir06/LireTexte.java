@@ -14,8 +14,11 @@ public class LireTexte {
 	 * 
 	 * @param ft nom du fichier texte
 	 */
-	public LireTexte(String ft) {
+	public LireTexte(String ft) throws IOException, FichierVide {
 		NomFichier = ft;
+		entree = new BufferedReader(new FileReader(ft));
+		this.Ouvrir();
+		tok = new StringTokenizer(ligne);
 	}
 
 	/**
@@ -27,8 +30,6 @@ public class LireTexte {
 	 * @throws FichierVide Fichier vide
 	 */
 	protected void Ouvrir() throws FichierVide, IOException{
-		entree = new BufferedReader(new FileReader(NomFichier));
-		tok = new StringTokenizer(ligne);
 		ligne = entree.readLine();
 		if (ligne == null) {
 			throw new FichierVide();
