@@ -68,7 +68,7 @@ public class FileInputStreamTP7 extends FileInputStream {
 		    }
 	}
 	/**
-	 * afficher toutes les propriétés du fichier
+	 * méthode proprietes
 	 */
 	public void proprietes() {
 		System.out.println("Le nom du fichier :"+this.file.getName());
@@ -83,7 +83,7 @@ public class FileInputStreamTP7 extends FileInputStream {
 	}
 	/**
 	 * méthode compareTo
-	 * @param doc
+	 * @param contenu
 	 * @return
 	 * @throws IOException
 	 */
